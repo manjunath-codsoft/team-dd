@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My E-Commerce Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ShopEase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shopnav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="shopnav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="cart.html" class="btn btn-outline-light ms-lg-4 btn-cart-count">Cart (0)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="py-5 hero-bg text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-2">Welcome to ShopEase</h1>
+      <p class="fs-5 text-light">Your One-Stop Shop for Quality Products and Best Deals!</p>
+      <a href="#products" class="btn btn-primary btn-lg mt-3 px-4 shadow"><b>Shop Now</b></a>
+    </div>
+  </header>
+
+  <!-- Products -->
+  <section id="products" class="container py-5">
+    <h2 class="mb-4 section-title">Featured Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card bg-gradient bg-dark text-light shadow">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=facearea&w=400&q=80" class="card-img-top p-2 product-img" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Classic Sneakers</h5>
+            <p class="card-text">Comfortable and stylish sneakers for all-day wear.</p>
+            <p class="fw-bold mb-2 product-price">₹2,799</p>
+            <a href="#" class="btn btn-outline-info w-100 btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card bg-gradient bg-dark text-light shadow">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=facearea&w=400&q=80" class="card-img-top p-2 product-img" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Headphones</h5>
+            <p class="card-text">Enjoy wireless music and calls with crystal clear sound.</p>
+            <p class="fw-bold mb-2 product-price">₹2,799</p>
+            <a href="#" class="btn btn-outline-info w-100 btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card bg-gradient bg-dark text-light shadow">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=400&q=80" class="card-img-top p-2 product-img" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Analog Watch</h5>
+            <p class="card-text">Elegant wristwatch with leather strap for every occasion.</p>
+            <p class="fw-bold mb-2 product-price">₹2,799</p>
+            <a href="#" class="btn btn-outline-info w-100 btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container py-5 border-top border-secondary">
+    <h2 class="section-title">About ShopEase</h2>
+    <p>ShopEase is a modern e-commerce store offering a curated selection of products at great prices. We focus on customer satisfaction, fast delivery, and secure payments. Start shopping now and experience hassle-free online shopping!</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 border-top border-secondary">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: <a href="mailto:info@shopease.com" class="link-info">info@shopease.com</a></p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: Bangalore, India</p>
+  </section>
+
+  <footer class="text-center py-4 border-top border-secondary footer-bg">
+    &copy; <span id="year"></span> ShopEase. All rights reserved.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
